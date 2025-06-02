@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f4f6f8;
+        color: #333;
+        padding: 2rem;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #2c3e50;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0 0 2rem;
+        max-width: 400px;        
+      }
+
+      label {
+        font-weight: 600;
+      }
+
+      input[type="text"] {
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 1rem;
+      }
+
+      input[type="text"]:focus {
+        outline: #007bff 1px solid;
+      }
+
+      button {
+        padding: 0.75rem;
+        font-size: 1rem;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+      #output {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      
+      /* Style for each post box */
+      #output div {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s ease;
+        background-color: #e9f0f7;
+        border-left: 5px solid #007bff;
+      }
+      
+      #output div:hover {
+        transform: scale(1.02);
+      }
+      @media (max-width: 600px) {
+        body {
+          padding: 1rem;
+        }
+
+        .container {
+          padding: 1.5rem;
+        }
+      }
+    </style>  </head>
+  <body>
+    <h1>Posts</h1>
+    <form id="add-post-form">
+      <label for="title">Title:</Title></label>
+      <input type="text" name="title" id="title" />
+      <button id="submit">Add Post</button>
+    </form>
+    <button id="get-posts-btn">Get Posts</button>
+    <div id="output"></div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
