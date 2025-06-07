@@ -1,7 +1,7 @@
-Express Posts CRUD Project
+# Express Posts CRUD Project
 A simple CRUD (Create, Read, Update, Delete) application built with Node.js and Express.js to manage posts, each consisting of a title and an ID.
 
-Features
+**Features**
 Create new posts
 
 Retrieve all posts or a specific post by ID
@@ -14,12 +14,12 @@ github.com
 github.com
 +1
 
-Prerequisites
+**Prerequisites**
 Node.js installed on your machine
 
 npm (comes with Node.js)
 
-Installation
+**Installation**
 Clone the repository:
 
 bash
@@ -51,7 +51,7 @@ node index.js
 Access the API:
 The server will start on http://localhost:3000/ (or the port specified in your environment).
 
-API Endpoints
+**API Endpoints**
 Method	Endpoint	Description
 GET	/posts	Retrieve all posts
 GET	/posts/:id	Retrieve a post by ID
@@ -59,7 +59,7 @@ POST	/posts	Create a new post
 PUT	/posts/:id	Update a post by ID
 DELETE	/posts/:id	Delete a post by ID
 
-Example Request
+**Example Request**
 Creating a new post:
 
 bash
